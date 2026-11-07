@@ -1,12 +1,12 @@
-package vn.antam.pharmacy.service;
+package vn.antam.binhan.service;
 
-import vn.antam.pharmacy.api.PharmacyDtos.CreateOrderRequest;
-import vn.antam.pharmacy.api.PharmacyDtos.CustomerRequest;
-import vn.antam.pharmacy.api.PharmacyDtos.OrderLineRequest;
-import vn.antam.pharmacy.model.Medicine;
-import vn.antam.pharmacy.model.SaleOrder;
-import vn.antam.pharmacy.repository.MedicineRepository;
-import vn.antam.pharmacy.repository.SaleOrderRepository;
+import vn.antam.binhan.api.StoreDtos.CreateOrderRequest;
+import vn.antam.binhan.api.StoreDtos.CustomerRequest;
+import vn.antam.binhan.api.StoreDtos.OrderLineRequest;
+import vn.antam.binhan.model.Medicine;
+import vn.antam.binhan.model.SaleOrder;
+import vn.antam.binhan.repository.MedicineRepository;
+import vn.antam.binhan.repository.SaleOrderRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -28,18 +28,18 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-class PharmacyServiceTest {
+class StoreServiceTest {
     @Mock
     private MedicineRepository medicineRepository;
     @Mock
     private SaleOrderRepository orderRepository;
 
-    private PharmacyService service;
+    private StoreService service;
     private Medicine medicine;
 
     @BeforeEach
     void setUp() throws Exception {
-        service = new PharmacyService(medicineRepository, orderRepository);
+        service = new StoreService(medicineRepository, orderRepository);
         medicine = new Medicine("Vitamin C", "Vitamin", "Tuýp 10 viên",
                 new BigDecimal("42000"), 5, false, LocalDate.of(2099, 12, 31),
                 "☼", "peach");

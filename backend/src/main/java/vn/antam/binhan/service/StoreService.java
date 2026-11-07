@@ -1,14 +1,14 @@
-package vn.antam.pharmacy.service;
+package vn.antam.binhan.service;
 
-import vn.antam.pharmacy.api.PharmacyDtos.CreateOrderRequest;
-import vn.antam.pharmacy.api.PharmacyDtos.MedicineResponse;
-import vn.antam.pharmacy.api.PharmacyDtos.OrderLineRequest;
-import vn.antam.pharmacy.api.PharmacyDtos.OrderResponse;
-import vn.antam.pharmacy.model.Medicine;
-import vn.antam.pharmacy.model.SaleOrder;
-import vn.antam.pharmacy.model.SaleOrderItem;
-import vn.antam.pharmacy.repository.MedicineRepository;
-import vn.antam.pharmacy.repository.SaleOrderRepository;
+import vn.antam.binhan.api.StoreDtos.CreateOrderRequest;
+import vn.antam.binhan.api.StoreDtos.MedicineResponse;
+import vn.antam.binhan.api.StoreDtos.OrderLineRequest;
+import vn.antam.binhan.api.StoreDtos.OrderResponse;
+import vn.antam.binhan.model.Medicine;
+import vn.antam.binhan.model.SaleOrder;
+import vn.antam.binhan.model.SaleOrderItem;
+import vn.antam.binhan.repository.MedicineRepository;
+import vn.antam.binhan.repository.SaleOrderRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -25,11 +25,11 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
-public class PharmacyService {
+public class StoreService {
     private final MedicineRepository medicineRepository;
     private final SaleOrderRepository orderRepository;
 
-    public PharmacyService(MedicineRepository medicineRepository, SaleOrderRepository orderRepository) {
+    public StoreService(MedicineRepository medicineRepository, SaleOrderRepository orderRepository) {
         this.medicineRepository = medicineRepository;
         this.orderRepository = orderRepository;
     }

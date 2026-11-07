@@ -1,9 +1,9 @@
-package vn.antam.pharmacy.api;
+package vn.antam.binhan.api;
 
-import vn.antam.pharmacy.api.PharmacyDtos.CreateOrderRequest;
-import vn.antam.pharmacy.api.PharmacyDtos.MedicineResponse;
-import vn.antam.pharmacy.api.PharmacyDtos.OrderResponse;
-import vn.antam.pharmacy.service.PharmacyService;
+import vn.antam.binhan.api.StoreDtos.CreateOrderRequest;
+import vn.antam.binhan.api.StoreDtos.MedicineResponse;
+import vn.antam.binhan.api.StoreDtos.OrderResponse;
+import vn.antam.binhan.service.StoreService;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,26 +19,26 @@ import java.util.List;
 @Validated
 @RestController
 @RequestMapping("/api")
-public class PharmacyController {
-    private final PharmacyService pharmacyService;
+public class StoreController {
+    private final StoreService storeService;
 
-    public PharmacyController(PharmacyService pharmacyService) {
-        this.pharmacyService = pharmacyService;
+    public StoreController(StoreService storeService) {
+        this.storeService = storeService;
     }
 
     @GetMapping("/medicines")
     public List<MedicineResponse> getMedicines() {
-        return pharmacyService.getMedicines();
+        return storeService.getMedicines();
     }
 
     @GetMapping("/orders")
     public List<OrderResponse> getOrders() {
-        return pharmacyService.getOrders();
+        return storeService.getOrders();
     }
 
     @PostMapping("/orders")
     @ResponseStatus(HttpStatus.CREATED)
     public OrderResponse createOrder(@Valid @RequestBody CreateOrderRequest request) {
-        return pharmacyService.createOrder(request);
+        return storeService.createOrder(request);
     }
 }

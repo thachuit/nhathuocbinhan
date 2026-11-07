@@ -1,6 +1,6 @@
-package vn.antam.pharmacy.repository;
+package vn.antam.binhan.repository;
 
-import vn.antam.pharmacy.model.Medicine;
+import vn.antam.binhan.model.Medicine;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Lock;
 import org.springframework.data.jpa.repository.Query;

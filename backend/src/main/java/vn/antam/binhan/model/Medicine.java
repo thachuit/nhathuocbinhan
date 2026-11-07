@@ -1,4 +1,4 @@
-package vn.antam.pharmacy.model;
+package vn.antam.binhan.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

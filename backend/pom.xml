@@ -10,9 +10,9 @@
     <relativePath/>
   </parent>
   <groupId>vn.antam</groupId>
-  <artifactId>pharmacy-backend</artifactId>
+  <artifactId>binh-an-backend</artifactId>
   <version>1.0.0</version>
-  <name>Binh An Pharmacy Backend</name>
+  <name>Nha Thuoc Binh An Backend</name>
   <properties>
     <java.version>11</java.version>
   </properties>

@@ -4,8 +4,8 @@ out/
 !**/src/test/**/out/
 frontend/node_modules/
 frontend/dist/
-pharmacy-data.properties
-pharmacy-data.properties.tmp
+binh-an-data.properties
+binh-an-data.properties.tmp
 backend/target/
 .idea/
 .continue/

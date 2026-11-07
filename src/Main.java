@@ -15,7 +15,7 @@ import java.util.Properties;
 import java.util.Scanner;
 
 public class Main {
-    private static final String DATA_FILE = "pharmacy-data.properties";
+    private static final String DATA_FILE = "binh-an-data.properties";
     private static final Scanner INPUT = new Scanner(System.in);
     private static final NumberFormat CURRENCY = NumberFormat.getCurrencyInstance(new Locale("vi", "VN"));
     private static final DateTimeFormatter DATE_TIME_FORMAT =

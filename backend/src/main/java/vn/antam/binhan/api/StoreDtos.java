@@ -1,8 +1,8 @@
-package vn.antam.pharmacy.api;
+package vn.antam.binhan.api;
 
-import vn.antam.pharmacy.model.Medicine;
-import vn.antam.pharmacy.model.SaleOrder;
-import vn.antam.pharmacy.model.SaleOrderItem;
+import vn.antam.binhan.model.Medicine;
+import vn.antam.binhan.model.SaleOrder;
+import vn.antam.binhan.model.SaleOrderItem;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Min;
@@ -16,8 +16,8 @@ import java.time.ZoneOffset;
 import java.util.ArrayList;
 import java.util.List;
 
-public final class PharmacyDtos {
-    private PharmacyDtos() {
+public final class StoreDtos {
+    private StoreDtos() {
     }
 
     public static final class MedicineResponse {

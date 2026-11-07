@@ -1,6 +1,6 @@
-package vn.antam.pharmacy.repository;
+package vn.antam.binhan.repository;
 
-import vn.antam.pharmacy.model.SaleOrder;
+import vn.antam.binhan.model.SaleOrder;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
