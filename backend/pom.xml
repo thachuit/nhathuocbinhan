@@ -9,7 +9,7 @@
     <version>2.7.18</version>
     <relativePath/>
   </parent>
-  <groupId>vn.antam</groupId>
+  <groupId>vn.binhan</groupId>
   <artifactId>binh-an-backend</artifactId>
   <version>1.0.0</version>
   <name>Nha Thuoc Binh An Backend</name>

@@ -1,8 +1,8 @@
-package vn.antam.binhan.api;
+package vn.binhan.api;
 
-import vn.antam.binhan.model.Medicine;
-import vn.antam.binhan.model.SaleOrder;
-import vn.antam.binhan.model.SaleOrderItem;
+import vn.binhan.model.Medicine;
+import vn.binhan.model.SaleOrder;
+import vn.binhan.model.SaleOrderItem;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Min;

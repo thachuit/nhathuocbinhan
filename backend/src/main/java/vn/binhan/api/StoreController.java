@@ -1,9 +1,9 @@
-package vn.antam.binhan.api;
+package vn.binhan.api;
 
-import vn.antam.binhan.api.StoreDtos.CreateOrderRequest;
-import vn.antam.binhan.api.StoreDtos.MedicineResponse;
-import vn.antam.binhan.api.StoreDtos.OrderResponse;
-import vn.antam.binhan.service.StoreService;
+import vn.binhan.api.StoreDtos.CreateOrderRequest;
+import vn.binhan.api.StoreDtos.MedicineResponse;
+import vn.binhan.api.StoreDtos.OrderResponse;
+import vn.binhan.service.StoreService;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;

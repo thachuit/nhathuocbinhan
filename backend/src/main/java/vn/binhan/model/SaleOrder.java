@@ -1,4 +1,4 @@
-package vn.antam.binhan.model;
+package vn.binhan.model;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;

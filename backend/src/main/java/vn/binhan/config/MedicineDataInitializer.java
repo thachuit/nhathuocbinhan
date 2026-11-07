@@ -1,7 +1,7 @@
-package vn.antam.binhan.config;
+package vn.binhan.config;
 
-import vn.antam.binhan.model.Medicine;
-import vn.antam.binhan.repository.MedicineRepository;
+import vn.binhan.model.Medicine;
+import vn.binhan.repository.MedicineRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

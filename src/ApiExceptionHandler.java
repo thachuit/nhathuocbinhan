@@ -1,6 +1,6 @@
-package vn.antam.binhan.api;
+package vn.binhan.api;
 
-import vn.antam.binhan.service.ApiException;
+import vn.binhan.service.ApiException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;

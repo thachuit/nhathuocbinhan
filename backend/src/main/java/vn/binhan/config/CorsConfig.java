@@ -1,4 +1,4 @@
-package vn.antam.binhan.config;
+package vn.binhan.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

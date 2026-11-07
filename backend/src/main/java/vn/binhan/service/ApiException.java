@@ -1,4 +1,4 @@
-package vn.antam.binhan.service;
+package vn.binhan.service;
 
 import org.springframework.http.HttpStatus;
 

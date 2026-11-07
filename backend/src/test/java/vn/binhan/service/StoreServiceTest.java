@@ -1,12 +1,12 @@
-package vn.antam.binhan.service;
+package vn.binhan.service;
 
-import vn.antam.binhan.api.StoreDtos.CreateOrderRequest;
-import vn.antam.binhan.api.StoreDtos.CustomerRequest;
-import vn.antam.binhan.api.StoreDtos.OrderLineRequest;
-import vn.antam.binhan.model.Medicine;
-import vn.antam.binhan.model.SaleOrder;
-import vn.antam.binhan.repository.MedicineRepository;
-import vn.antam.binhan.repository.SaleOrderRepository;
+import vn.binhan.api.StoreDtos.CreateOrderRequest;
+import vn.binhan.api.StoreDtos.CustomerRequest;
+import vn.binhan.api.StoreDtos.OrderLineRequest;
+import vn.binhan.model.Medicine;
+import vn.binhan.model.SaleOrder;
+import vn.binhan.repository.MedicineRepository;
+import vn.binhan.repository.SaleOrderRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
