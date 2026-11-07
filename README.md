@@ -11,6 +11,12 @@ CREATE DATABASE binh_an;
 ```
 
 Backend mặc định kết nối `localhost:5432`, database `binh_an`, user `binh_an`.
+Backend Spring Boot 4 yêu cầu JDK 25; sau khi cài, tại thư mục `backend` chạy:
+
+```powershell
+mvn spring-boot:run
+```
+
 Lệnh cài PostgreSQL riêng cho project tạo database, role ứng dụng và đặt `DB_URL`,
 `DB_USER`, `DB_PASSWORD` trong biến môi trường Windows của tài khoản hiện tại. Mở terminal
 mới sau khi cài, rồi tại thư mục `backend` chạy:
@@ -83,7 +89,7 @@ Trong môi trường production, database ngoài được cấu hình qua biến
 mật khẩu Neon vào source code. Cửa hàng demo hiện chưa có đăng nhập/phân quyền, vì vậy không
 nên mở chức năng đặt hàng hoặc ghi dữ liệu khách hàng thật trên Internet.
 
-Ứng dụng Java console cũ vẫn có thể chạy bằng JDK 11:
+Ứng dụng Java console cũ độc lập vẫn có thể chạy bằng JDK 11:
 
 ```powershell
 javac -encoding UTF-8 -d out src\Main.java

@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.7.18</version>
+    <version>4.1.1</version>
     <relativePath/>
   </parent>
   <groupId>vn.binhan</groupId>
@@ -14,12 +14,12 @@
   <version>1.0.0</version>
   <name>Nha Thuoc Binh An Backend</name>
   <properties>
-    <java.version>11</java.version>
+    <java.version>25</java.version>
   </properties>
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-web</artifactId>
+      <artifactId>spring-boot-starter-webmvc</artifactId>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
