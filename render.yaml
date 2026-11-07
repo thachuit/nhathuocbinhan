@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: binh-an-api
+    runtime: docker
+    plan: free
+    region: singapore
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/medicines
+    envVars:
+      - key: DB_URL
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: APP_CORS_ORIGINS
+        sync: false

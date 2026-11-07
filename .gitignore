@@ -1,0 +1,41 @@
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+frontend/node_modules/
+frontend/dist/
+pharmacy-data.properties
+pharmacy-data.properties.tmp
+backend/target/
+.idea/
+.continue/
+*.iml
+.env
+.env.*
+!.env.example
+.kotlin
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
